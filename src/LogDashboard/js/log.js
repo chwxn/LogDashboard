@@ -194,6 +194,7 @@ function search() {
     searchInput.Level = $("#Level").val();
     searchInput.StartTime = $("#StartTime").val();
     searchInput.EndTime = $("#EndTime").val();
+    searchInput.Logger = $("#Logger").val();
 
     doSearch();
     return false;

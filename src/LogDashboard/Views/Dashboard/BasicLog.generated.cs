@@ -69,11 +69,11 @@ WriteLiteral("<div class=\"card\">\r\n    <div class=\"card-header border border
 "m-control-input\" id=\"hour\">\r\n                            <label class=\"custom-co" +
 "ntrol-label\" for=\"hour\">一小时</label>\r\n                        </div>\r\n           " +
 "         </div>\r\n                </div>\r\n            </div>\r\n            <div cl" +
-"ass=\"row\">\r\n                <div class=\"col-md-6\">\r\n                    <div cla" +
+"ass=\"row\">\r\n                <div class=\"col-md-3\">\r\n                    <div cla" +
 "ss=\"form-group\">\r\n                        <label for=\"Message\" class=\"form-contr" +
 "ol-label\">Message</label>\r\n                        <input id=\"Message\" class=\"fo" +
 "rm-control\" placeholder=\"Message\">\r\n                    </div>\r\n                " +
-"</div>\r\n                <div class=\"col-md-6\">\r\n                    <div class=\"" +
+"</div>\r\n                <div class=\"col-md-3\">\r\n                    <div class=\"" +
 "form-group\">\r\n                        <label for=\"Level\" class=\"form-control-lab" +
 "el\">日志级别</label>\r\n                        <select id=\"Level\" class=\"form-control" +
 "\">\r\n                            <option value=\"\">All</option>\r\n                 " +
@@ -82,23 +82,27 @@ WriteLiteral("<div class=\"card\">\r\n    <div class=\"card-header border border
 "FO\">Info</option>\r\n                            <option value=\"WARN\">Warn</option" +
 ">\r\n                            <option value=\"ERROR\">Error</option>\r\n           " +
 "                 <option value=\"FATAL\">Fatal</option>\r\n                        <" +
-"/select>\r\n                    </div>\r\n                </div>\r\n            </div>" +
-"\r\n            <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n       " +
-"             <div class=\"form-group\">\r\n                        <label for=\"Start" +
-"Time\" class=\"form-control-label\">开始时间</label>\r\n                        <input ty" +
-"pe=\"text\" class=\"form-control datetimepicker-input\" id=\"StartTime\" data-toggle=\"" +
-"datetimepicker\" data-target=\"#StartTime\" />\r\n                    </div>\r\n       " +
-"         </div>\r\n                <div class=\"col-md-6\">\r\n                    <di" +
-"v class=\"form-group\">\r\n                        <label for=\"EndTime\" class=\"form-" +
-"control-label\">结束时间</label>\r\n                        <input type=\"text\" class=\"f" +
-"orm-control datetimepicker-input\" id=\"EndTime\" data-toggle=\"datetimepicker\" data" +
-"-target=\"#EndTime\" />\r\n                    </div>\r\n                </div>\r\n     " +
-"       </div>\r\n            <button class=\"btn btn-outline-primary\" id=\"searchBtn" +
-"\">查询</button>\r\n        </form>\r\n\r\n    </div>\r\n    <div id=\"LogList\">\r\n        ");
+"/select>\r\n                    </div>\r\n                </div>\r\n                <d" +
+"iv class=\"col-md-3\">\r\n                    <div class=\"form-group\">\r\n            " +
+"            <label for=\"StartTime\" class=\"form-control-label\">开始时间</label>\r\n    " +
+"                    <input type=\"text\" class=\"form-control datetimepicker-input\"" +
+" id=\"StartTime\" data-toggle=\"datetimepicker\" data-target=\"#StartTime\" />\r\n      " +
+"              </div>\r\n                </div>\r\n                <div class=\"col-md" +
+"-3\">\r\n                    <div class=\"form-group\">\r\n                        <lab" +
+"el for=\"EndTime\" class=\"form-control-label\">结束时间</label>\r\n                      " +
+"  <input type=\"text\" class=\"form-control datetimepicker-input\" id=\"EndTime\" data" +
+"-toggle=\"datetimepicker\" data-target=\"#EndTime\" />\r\n                    </div>\r\n" +
+"                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n     " +
+"           <div class=\"col-md-3\">\r\n                    <div class=\"form-group\">\r" +
+"\n                        <label for=\"Message\" class=\"form-control-label\">Logger<" +
+"/label>\r\n                        <input id=\"Logger\" class=\"form-control\" placeho" +
+"lder=\"Logger\">\r\n                    </div>\r\n                </div>\r\n            " +
+"</div>\r\n            <button class=\"btn btn-outline-primary\" id=\"searchBtn\">查询</b" +
+"utton>\r\n        </form>\r\n\r\n    </div>\r\n    <div id=\"LogList\">\r\n        ");
 
 
             
-            #line 89 "..\..\Views\Dashboard\BasicLog.cshtml"
+            #line 95 "..\..\Views\Dashboard\BasicLog.cshtml"
    Write(Raw(ViewData["logs"]));
 
             
@@ -108,7 +112,7 @@ WriteLiteral("\r\n    </div>\r\n    <div id=\"page\">\r\n        ");
 
 
             
-            #line 92 "..\..\Views\Dashboard\BasicLog.cshtml"
+            #line 98 "..\..\Views\Dashboard\BasicLog.cshtml"
    Write(Raw(ViewData["page"]));
 
             

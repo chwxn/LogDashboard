@@ -102,7 +102,12 @@ namespace LogDashboard.Handle
 
             expression = expression.AndIf(!string.IsNullOrWhiteSpace(input.Message), () =>
             {
-                return x => x.Message.Contains(input.Message) || x.Logger.Contains(input.Message);
+                return x => x.Message.Contains(input.Message) ;
+            });
+
+            expression = expression.AndIf(!string.IsNullOrWhiteSpace(input.Logger), () =>
+            {
+                return x => x.Logger.Contains(input.Logger);
             });
 
             if (input.Unique)

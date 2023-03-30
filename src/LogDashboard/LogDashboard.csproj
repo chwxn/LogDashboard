@@ -70,11 +70,6 @@
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.9" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Dashboard\BasicLog.generated.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>BasicLog.cshtml</DependentUpon>
-    </Compile>
     <Compile Update="Views\Dashboard\Home.generated.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -84,11 +79,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>LogInfo.cshtml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Dashboard\LogList.generated.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>LogList.cshtml</DependentUpon>
     </Compile>
     <Compile Update="Views\Dashboard\TraceLogList.generated.cs">
       <DesignTime>True</DesignTime>

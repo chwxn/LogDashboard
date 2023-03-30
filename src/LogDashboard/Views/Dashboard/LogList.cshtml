@@ -29,14 +29,14 @@
             {
                 <tr class="row mx-0">
                     <td class="col-1"><a href="javascript:void(0);" onclick="logInfo('@item.Id.ToString()')">@item.Id.ToString()</a></td>
-                    <td class="col-3">@item.Logger</td>
+                    <td class="col-2">@item.Logger</td>
                     <td class="col-1"><button class="btn btn-outline-@item.Level.ToUpper()">@item.Level.ToUpper()</button></td>
                     <td class="col-4" onclick="$(this).next().show(); $(this).css('display','none');">
                         @{
                             var message = item.Message;
-                            if (message.Length > 90)
+                            if (message.Length > 120)
                             {
-                                message = message.Substring(0, 90) + "........";
+                                message = message.Substring(0, 120) + "........";
                             }
                         }
                         @message

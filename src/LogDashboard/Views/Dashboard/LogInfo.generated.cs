@@ -172,12 +172,12 @@ WriteLiteral("</button></td>\r\n                            </tr>\r\n           
             #line hidden
 WriteLiteral("</td>\r\n                            </tr>\r\n                            <tr>\r\n     " +
 "                           <td>消息</td>\r\n                                <td clas" +
-"s=\"text-nowrap\">");
+"s=\"text-left\">");
 
 
             
             #line 54 "..\..\Views\Dashboard\LogInfo.cshtml"
-                                                   Write(log.Message);
+                                                 Write(log.Message);
 
             
             #line default

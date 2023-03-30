@@ -155,7 +155,7 @@ WriteLiteral("\" onclick=\'$(\"#");
 
             
             #line 37 "..\..\Views\Dashboard\TraceLogList.cshtml"
-                                                                                                             Write(item.Id.ToString());
+                                                                                                            Write(item.Id.ToString());
 
             
             #line default
@@ -165,7 +165,7 @@ WriteLiteral("\").modal();\'>");
 
             
             #line 37 "..\..\Views\Dashboard\TraceLogList.cshtml"
-                                                                                                                                             Write(item.Level.ToUpper());
+                                                                                                                                            Write(item.Level.ToUpper());
 
             
             #line default
@@ -197,7 +197,7 @@ WriteLiteral("\">");
 
             
             #line 41 "..\..\Views\Dashboard\TraceLogList.cshtml"
-                                                                                                Write(item.Level.ToUpper());
+                                                                                               Write(item.Level.ToUpper());
 
             
             #line default
