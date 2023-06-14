@@ -29,7 +29,7 @@ namespace LogDashboard.Handle
             ViewData["basicLogNav"] = "";
             var result = await _logRepository.GetPageListAsync(1, 10, sorts: new[] { new Sort { Ascending = false, PropertyName = "Id" } });
 
-            ViewData["unique"] = (await _logRepository.UniqueCountAsync()).Count;
+            ViewData["unique"] = 0;//(await _logRepository.UniqueCountAsync()).Count;
 
             var now = DateTime.Now;
             var weeHours = now.Date.AddHours(23).AddMinutes(59).AddSeconds(59);
