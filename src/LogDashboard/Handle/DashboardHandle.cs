@@ -36,11 +36,11 @@ namespace LogDashboard.Handle
             ViewData["todayCount"] = await _logRepository.CountAsync(x => x.LongDate >= now.Date && x.LongDate <= weeHours);
 
             var hour = now.AddHours(-1);
-            ViewData["hourCount"] = await _logRepository.CountAsync(x => x.LongDate >= hour && x.LongDate <= now);
+            ViewData["hourCount"] = 0;//await _logRepository.CountAsync(x => x.LongDate >= hour && x.LongDate <= now);
             ViewData["allCount"] = await _logRepository.CountAsync();
 
             //Chart Data
-            ViewData["ChartData"] = (await LogChartFactory.GetLogChart(ChartDataType.Hour).GetCharts(_logRepository)).ToJsonString();
+            ViewData["ChartData"] = string.Empty; //(await LogChartFactory.GetLogChart(ChartDataType.Hour).GetCharts(_logRepository)).ToJsonString();
 
             return await View(result);
         }
